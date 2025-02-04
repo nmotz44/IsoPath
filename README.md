@@ -1,0 +1,1 @@
+This package makes it easier to add stable isotope analysis (and other tracer data) into the Rpath package that runs EcoPath with EcoSim (EwE). Functions are present to help format dataframes to be input to simmr, pull out key information from simmr so it can be input to Rpath, and analyze the resulting Rpath models. Publication to come
