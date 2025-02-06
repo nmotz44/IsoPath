@@ -32,6 +32,9 @@ diet_sensitivity_test = function(resample_data_list, # list of all diets that we
   # make sure REco_params is a list that is a Rpath item
   if(!is.list(REco_params))
     stop("REco_params must be a Rpath parameter object")
+  # make sure metric is either "trophic level" or "biomass"
+  if(metric != "trophic level" & metric != "biomass")
+    stop("Invalid metric type. Metric must be either 'trophic level' or 'biomass'")
   # make sure model_name is a vector
   if(!is.character(model_name))
     stop("model_name must be a character")
@@ -40,92 +43,50 @@ diet_sensitivity_test = function(resample_data_list, # list of all diets that we
   # set up initial progress bar
   pb = txtProgressBar(min = 0, max = length(resample_data_list[[1]]), style = 3)
 
-  if (metric == "trophic level"){
-    # Set the list of trophic levels to save (all included in the model)
-    TL_save_species = REco_params$model$Group
+  # Set the list of trophic levels orbiomass to save (all included in the model)
+  save_species = REco_params$model$Group
 
-    # Initialize a list to store trophic levels for each species
-    trophic_levels_list = lapply(TL_save_species, function(species)
-      numeric(length(resample_data_list[[1]])))
-    names(trophic_levels_list) = TL_save_species
+  # Initialize a list to store trophic levels or biomass for each species
+  metric_list <- lapply(save_species, function(species)
+    numeric(length(resample_data_list[[1]])))
+  names(metric_list) <- save_species
 
-    # Loop over each iteration
-    for (i in 1:length(resample_data_list[[1]])) {
-      # Update diet inputs for each species if they are present in resample_data_list
-      for (species in names(resample_data_list)) {
-        if (species %in% TL_save_species) {
-          REco_params$diet[, species] = c(resample_data_list[[species]][,i])
+  # Loop over each iteration
+  for (i in 1:length(resample_data_list[[1]])) {
+    # Update diet inputs for each species if they are present in resample_data_list
+    for (species in names(resample_data_list)) {
+      if (species %in% save_species) {
+        REco_params$diet[, species] = c(resample_data_list[[species]][,i])
+      }
+    }
+
+    # Run ecopath model
+    REco = rpath(REco_params, eco.name = model_name)
+
+    # Check if the model is balanced
+    if (max(REco$EE) <= 1) {
+      # Pull out trophic levels for each species in the model
+      for (species in save_species) {
+        if (metric == "trophic level" & species %in% names(REco$TL)) {
+            metric_list[[species]][i] = REco$TL[species]
+        }
+        else if (metric == "biomass" & species %in% names(REco$Biomass)) {
+          metric_list[[species]][i] <- REco$Biomass[species]
         }
       }
-
-      # Run ecopath model
-      REco = rpath(REco_params, eco.name = model_name)
-
-      # Check if the model is balanced
-      if (max(REco$EE) <= 1) {
-        # Pull out trophic levels for each species in the model
-        for (species in TL_save_species) {
-          if (species %in% names(REco$TL)) {
-            trophic_levels_list[[species]][i] = REco$TL[species]
-          }
-        }
-      } else {
-        # Set trophic levels to NA if the model is not balanced
-        for (species in TL_save_species) {
-          trophic_levels_list[[species]][i] = NA
-        }
+    }
+    else {
+      # Set trophic level or biomass values to NA if the model is not balanced
+      for (species in save_species) {
+        metric_list[[species]][i] = NA
       }
+    }
       # update progress bar
       setTxtProgressBar(pb, i)
-    }
-    # close progress bar
-    close(pb)
-    return(trophic_levels_list)
-  } else if (metric == "biomass"){
-      # Set the list of trophic levels to save (all included in the model)
-      bio_save_species = REco_params$model$Group
-
-      # Initialize a list to store biomass for each species
-      biomass_list = lapply(bio_save_species, function(species)
-        numeric(length(resample_data_list[[1]])))
-      names(biomass_list) = bio_save_species
-
-      # Loop over each iteration
-      for (i in 1:length(resample_data_list[[1]])) {
-        # Update diet inputs for each species if they are present in resample_data_list
-        for (species in names(resample_data_list)) {
-          if (species %in% bio_save_species) {
-            REco_params$diet[, species] = c(resample_data_list[[species]][,i])
-          }
-        }
-
-        # Run ecopath model
-        REco = rpath(REco_params, eco.name = model_name)
-
-        # Check if the model is balanced
-        if (max(REco$EE) <= 1) {
-          # Pull out biomass for each species in the model
-          for (species in bio_save_species) {
-            if (species %in% names(REco$Biomass)) {
-              biomass_list[[species]][i] = REco$Biomass[species]
-            }
-          }
-        } else {
-          # Set trophic levels to NA if the model is not balanced
-          for (species in bio_save_species) {
-            biomass_list[[species]][i] = NA
-          }
-        }
-        # update progress bar
-        setTxtProgressBar(pb, i)
-      }
-      # close progress bar
-      close(pb)
-      return(biomass_list)
-  } else {
-    stop("Invalid metric type. Metric must be either 'trophic level' or 'biomass'")
   }
-
+  # close progress bar
+  close(pb)
+  return(metric_list)  
 }
 
-## THIS IS TESTED AND WORKS!! ##
+# THIS IS NOT TESTED YET                            
