@@ -1,12 +1,3 @@
-##### MASTER CODE TO RESAMPLE WITHIN DIET CONFIDENCE INTERVALS TO BE PASSED TO RPATH #####
-# this code will take the diet distributions from the simmr and mixsiar functions I made and create a number of samples
-# defined by the user that fit within the range
-# the inputs will be:
-  # confidence interval dataframe from simmr/mixSIAR_output_dist
-  # number of iterations (default 1000)
-# the outputs will be:
-  # a dataframe with a row for each species and 1000 (or otherwise specified) number of columns with a potential diet
-
 #' Resample within the diet distribution from simmr_output_dist.
 #' @description
 #' The distributions are resampled in a way so that the diet proportions always sum to 1 so this output can be passed directly to Rpath.
@@ -88,7 +79,3 @@ diet_resample = function(diet_CI, # confidence interval data frame from simmr/mi
   }
   return(final_df)
 }
-
-# THIS IS TESTED AND WORKS!! #
-
-

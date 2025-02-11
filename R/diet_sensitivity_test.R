@@ -1,10 +1,3 @@
-##### MASTER CODE TO RUN ALL THE ITERATIONS OF DIETS THROUGH RPATH #####
-# this code will take the outputs from diet_resample and put them through rpath to save
-# for future analysis/graphing
-# the inputs will be:
-  # a list of the resampled diets
-  # the REco parameters
-
 #' Test the sensitiity of Rpath trophic levels to changes in diets.
 #' @description
 #' This function utilizes the diets resampled in diet_resample and passes each iteration to Rpath and runs the model. If the model is balanced, the trophic level of all species is exracted and saved as a list for examination/visualization.
@@ -88,5 +81,3 @@ diet_sensitivity_test = function(resample_data_list, # list of all diets that we
   close(pb)
   return(metric_list)
 }
-
-## THIS IS TESTED AND WORKS!! ##

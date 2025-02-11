@@ -1,14 +1,3 @@
-##### MASTER CODE TO PULL DIETS FROM SIMMR OUTPUTS #####
-# this code will have the function to pull data from a simmr output into a format for rpath
-# it will also create a vector with the 25-75% confidence intervals to test for sensitivity
-#   in a following function
-# on second thought this will only do the mean, and the distribution will be a secon function
-# the inputs will be:
-#   simmr object
-#   rpath group vector
-
-
-##### FUNCTION ATTEMPT 1 #####
 #' Pull the average diets from simmr to run through Rpath
 #'
 #' @description
@@ -75,29 +64,3 @@ simmr_diet_output_mean = function(simmr_data, # simmr output file
   ## SAVE OUTPUT ##
   return(export_data)
 }
-
-##### THIS OUTPUT HAS BEEN TESTED AND IMPORTED TO RPATH AND WORKS #####
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

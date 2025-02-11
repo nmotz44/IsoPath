@@ -1,14 +1,3 @@
-##### FUNCTION TO CREATE THE SIMMR OBJECT FOR MIXING MODELS #####
-# in this code, I want to be able to take raw SIA data and choose the
-# consumer, the source, and set the disc factors to create the simmmr object
-# this will need to let us identify the consumers, sources, and generate disc factors
-# for each of them
-# also it should mean and sd the prey data and use raw values for consumer
-# also need to create a matrix with the prey names and the disc factor columns
-
-##### MY ATTEMPT 1 #####
-
-
 #' Format stable isotope data to run through simmr
 #' @description
 #' A function used to format a dataframe of raw stable isotope data for simmr runs. This removes the need to make a separate excel or .csv for each consumer and instead a consumer and their prey can be specified from a single dataframe. In this function, all prey will have the same discrimination factor, if prey have different discrimination factors please see the simmr package and format in their reccomended way. This function creates a simmr object that will be functional with the rest of simmr's functions.
@@ -176,10 +165,10 @@ format_simmr_data = function(data, # data frame of raw SIA data
                        correction_means=as.matrix(disc_factors[,2:3]),
                        correction_sds=as.matrix(disc_factors[,4:5]),
                        group=unlist(consumer_data[[group.column]]))
-  } # tested and works
+  } 
 
   return(simmr)
-} ## add in a warning function if not all prey items are found in the dataframe ##
+} 
 
 
 

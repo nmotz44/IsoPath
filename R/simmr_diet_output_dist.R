@@ -1,13 +1,3 @@
-##### MASTER CODE TO PULL DIETS FROM SIMMR OUTPUTS #####
-# this code will have the function to pull data from a simmr output into a format for rpath
-# it will also create a vector with the 25-75% confidence intervals to test for sensitivity
-#   in a following function
-# the inputs will be:
-#   simmr object
-#   rpath group vector
-
-
-##### FUNCTION ATTEMPT 1 #####
 #' Extract a range of diet possibilities from simmr within predefined confidence intervals
 #'
 #' @description
@@ -94,13 +84,4 @@ simmr_diet_output_dist = function(simmr_data, # simmr output file
   ## SAVE OUTPUT ##
   return(all)
 }
-
-### THIS IS TESTED AND WORKS!! ###
-
-
-
-
-
-
-
 

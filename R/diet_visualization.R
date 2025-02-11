@@ -1,13 +1,3 @@
-##### FUNCTION TO CREATE HISTROGRAMS OF THE TROPHIC LEVEL HISTOGRAMS OF ALL SPECIES #####
-# this code will take the output from diet_sensitivity_test and provide quick visualization
-# this is not meant for polished final plots, only a quick way to see how the diet impacts TL
-# this will also allow users to make boxplots to see all species together at once
-# the inputs will be:
-  # diet_sensitivity_test output
-  # type of plot to make ("histogram" or "boxplot")
-  # species to analyze (default is all)
-
-
 #' Quickly visualize trophic level changes from changes in diet
 #'
 #' @description
@@ -132,7 +122,3 @@ diet_visualization = function(diet_sensitivity_test_output, # output from diet_s
     print("Error, invalid plot_type, must be 'histogram' or 'boxplot'")
   }
 }
-
-
-## THIS HAS BEEN TESTED AND WORKS!! ##
-
