@@ -13,8 +13,8 @@
 #' @export
 #'
 #' @examples simmr_diet_output_dist(simmr_ouput, rpath_groups, CI.low = 0.1, CI.high = 0.9)
-simmr_diet_output_dist = function(simmr_data, # simmr output file
-                                  rpath_groups, # vector of all the groups for rpath
+simmr_diet_output_dist = function(simmr.data, # simmr output file
+                                  rpath.groups, # vector of all the groups for rpath
                                   CI.low = 0.025, # lower limit of confidence intervals
                                   CI.high = 0.975 # upper limit of confidence intervals
 ){

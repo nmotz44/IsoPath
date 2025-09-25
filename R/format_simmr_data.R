@@ -30,10 +30,10 @@ format_simmr_data = function(data, # data frame of raw SIA data
                              d15N.column, # name of column with d15N data in data
                              consumer.names, # vector of consumer names
                              prey.names, # vector of prey names
-                             disc.factors.c = 1.0, # d13C discrimination factor
+                             disc.factors.c = 0.4, # d13C discrimination factor
                              disc.factors.n = 3.4, # d15N discrimination factor
-                             disc.factors.c.sd = 0.1, # sd of d13C discrimination factor
-                             disc.factors.n.sd = 0.1, # sd of d15N discrimination factor
+                             disc.factors.c.sd = 1.3, # sd of d13C discrimination factor
+                             disc.factors.n.sd = 1.0, # sd of d15N discrimination factor
                              data.type = "raw", # either "raw", or "means" to specify if we are using raw data or pre meaned and SD data
                              d13C.column.sd = NA, # specify the column name with the d13C sd data, default is NA
                              d15N.column.sd = NA, # specify the column name with the d15N sd data, default is NA

@@ -11,8 +11,8 @@
 #' @export
 #'
 #' @examples simmr_diet_output_mean(simmr_output, rpath_groups)
-simmr_diet_output_mean = function(simmr_data, # simmr output file
-                                  rpath_groups # vector of all the groups for rpath
+simmr_diet_output_mean = function(simmr.data, # simmr output file
+                                  rpath.groups # vector of all the groups for rpath
 ){
   ## CHECK INPUTS ##
   # simmr_data must be a simmr object
