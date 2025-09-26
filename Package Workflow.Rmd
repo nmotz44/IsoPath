@@ -33,7 +33,7 @@ set.seed(22)
 # load required packages
 library(simmr)
 library(Rpath)
-library(RpathSIA2)
+library(IsoPath)
 
 # load data
 data("AFS_SIA_Data")
@@ -294,15 +294,15 @@ This section will use the information saved in "resampled.TL" to visualize how t
 ``` {r, echo = TRUE, fig.width = 4.5, fig.height = 3}
 ## Trophic Level
 # make histograms
-diet_visualization(resampled.TL, plot_type = "histogram",
-                   species_list = c("BenthicInverts", "AnchovyJuv",
+diet_visualization(resampled.TL, plot.type = "histogram",
+                   species.list = c("BenthicInverts", "AnchovyJuv",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"),
                    metric = "trophic level")
 ```
 ``` {r, echo = TRUE, fig.width = 10, fig.height = 6}
 # make boxplot
-diet_visualization(resampled.TL, plot_type = "boxplot",
-                   species_list = c("BenthicInverts", "AnchovyJuv",
+diet_visualization(resampled.TL, plot.type = "boxplot",
+                   species.list = c("BenthicInverts", "AnchovyJuv",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"))
 # make violin plot
 diet_visualization(resampled.TL, plot_type = "violin",
@@ -312,8 +312,8 @@ diet_visualization(resampled.TL, plot_type = "violin",
 ``` {r, echo = TRUE, fig.width = 4.5, fig.height = 3}
 ## Biomass
 # make histograms
-diet_visualization(resampled.bio, plot_type = "histogram",
-                   species_list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
+diet_visualization(resampled.bio, plot.type = "histogram",
+                   species.list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
                                     "BenthicInverts", "MudSnail", "Detritus"),
                    metric = "biomass")
 ```

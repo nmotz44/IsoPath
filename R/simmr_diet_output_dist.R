@@ -20,12 +20,12 @@ simmr_diet_output_dist = function(simmr.data, # simmr output file
 ){
   ## CHECK INPUTS ##
   # simmr_data must be a simmr object
-  if(!is.list(simmr_data))
+  if(!is.list(simmr.data))
     stop("simmr_data must be a simmr output, please use the output from 'simmr_mcmc' function from simmr package")
 
   # second check to make sure its a simmr object not just a list
   tryCatch({
-    if (!("p" %in% names(simmr_data$output[[1]]$BUGSoutput$sims.list))) {
+    if (!("p" %in% names(simmr.data$output[[1]]$BUGSoutput$sims.list))) {
       stop("simmr_data must be a simmr object, please use the output from 'simmr_mcmc' function from simmr package")
     }
     # If it exists, you can proceed with further processing
@@ -35,7 +35,7 @@ simmr_diet_output_dist = function(simmr.data, # simmr output file
   })
 
   # rpath_groups must be a vector of all the groups in rpath
-  if(!is.vector(rpath_groups))
+  if(!is.vector(rpath.groups))
     stop("rpath_groups must be a vector of all the groups included in rpath model")
 
   # CI.low must be a positive number between 0 and 1 less than CI.high
@@ -47,8 +47,8 @@ simmr_diet_output_dist = function(simmr.data, # simmr output file
     stop("CI.high must be a number between 0 and 1, and larger than CI.high")
 
   ## PULL DATA FROM SIMMR OUTPUT ##
-  simmr.diets = simmr_data$output[[1]]$BUGSoutput$sims.list$p # extract data from simmr
-  colnames(simmr.diets) = simmr_data$input$source_names # makes the column names match simmr
+  simmr.diets = simmr.data$output[[1]]$BUGSoutput$sims.list$p # extract data from simmr
+  colnames(simmr.diets) = simmr.data$input$source_names # makes the column names match simmr
 
   # convert this to a dataframe for easier manipulation
   df = reshape2::melt(simmr.diets)
@@ -63,11 +63,11 @@ simmr_diet_output_dist = function(simmr.data, # simmr output file
     )
 
   ## MAKE OUTPUT DATA FRAME ##
-  all = data.frame(row.names = rpath_groups, low = rep(0, length(rpath_groups)),
+  all = data.frame(row.names = rpath.groups, low = rep(0, length(rpath.groups)),
                    high = rep(0, length(rpath_groups)))
 
   # fill the columns with the high and low CI intervals
-  for (species in rpath_groups) {
+  for (species in rpath.groups) {
     # fill in lows
     if (species %in% dist$Source) {
       all[species, "low"] = dist %>%

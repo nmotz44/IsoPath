@@ -20,41 +20,41 @@ diet_sensitivity_test = function(resample.data.list, # list of all diets that we
 {
   ## CHECK PARAMETERS ##
   # make sure resample_data_list is a list from the previous step
-  if(!is.list(resample_data_list))
+  if(!is.list(resample.data.list))
     stop("resample_data_list must be the output from diet_resample")
   # make sure REco_params is a list that is a Rpath item
-  if(!is.list(REco_params))
+  if(!is.list(REco.params))
     stop("REco_params must be a Rpath parameter object")
   # make sure metric is either "trophic level" or "biomass"
   if(metric != "trophic level" & metric != "biomass")
     stop("Invalid metric type. Metric must be either 'trophic level' or 'biomass'")
   # make sure model_name is a vector
-  if(!is.character(model_name))
+  if(!is.character(model.name))
     stop("model_name must be a character")
 
   ## FUNCTION ##
   # set up initial progress bar
-  pb = txtProgressBar(min = 0, max = length(resample_data_list[[1]]), style = 3)
+  pb = txtProgressBar(min = 0, max = length(resample.data.list[[1]]), style = 3)
 
   # Set the list of trophic levels orbiomass to save (all included in the model)
-  save_species = REco_params$model$Group
+  save_species = REco.params$model$Group
 
   # Initialize a list to store trophic levels or biomass for each species
   metric_list <- lapply(save_species, function(species)
-    numeric(length(resample_data_list[[1]])))
+    numeric(length(resample.data.list[[1]])))
   names(metric_list) <- save_species
 
   # Loop over each iteration
-  for (i in 1:length(resample_data_list[[1]])) {
+  for (i in 1:length(resample.data.list[[1]])) {
     # Update diet inputs for each species if they are present in resample_data_list
-    for (species in names(resample_data_list)) {
+    for (species in names(resample.data.list)) {
       if (species %in% save_species) {
-        REco_params$diet[, species] = c(resample_data_list[[species]][,i])
+        REco.params$diet[, species] = c(resample.data.list[[species]][,i])
       }
     }
 
     # Run ecopath model
-    REco = rpath(REco_params, eco.name = model_name)
+    REco = rpath(REco.params, eco.name = model_name)
 
     # Check if the model is balanced
     if (max(REco$EE) <= 1) {

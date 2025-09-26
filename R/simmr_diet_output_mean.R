@@ -16,12 +16,12 @@ simmr_diet_output_mean = function(simmr.data, # simmr output file
 ){
   ## CHECK INPUTS ##
   # simmr_data must be a simmr object
-  if(!is.list(simmr_data))
+  if(!is.list(simmr.data))
     stop("simmr_data must be a simmr output, please use the output from 'simmr_mcmc' function from simmr package")
 
   # second check to make sure its a simmr object not just a list
   tryCatch({
-    if (!("p" %in% names(simmr_data$output[[1]]$BUGSoutput$sims.list))) {
+    if (!("p" %in% names(simmr.data$output[[1]]$BUGSoutput$sims.list))) {
       stop("simmr_data must be a simmr object, please use the output from 'simmr_mcmc' function from simmr package")
     }
     # If it exists, you can proceed with further processing
@@ -31,11 +31,11 @@ simmr_diet_output_mean = function(simmr.data, # simmr output file
   })
 
   # rpath_groups must be a vector of all the groups in rpath
-  if(!is.vector(rpath_groups))
+  if(!is.vector(rpath.groups))
     stop("rpath_groups must be a vector of all the groups included in rpath model")
   ## PULL DATA FROM SIMMR OUTPUT ##
-  simmr.diets = simmr_data$output[[1]]$BUGSoutput$sims.list$p # extract data from simmr
-  colnames(simmr.diets) = simmr_data$input$source_names # makes the column names match simmr
+  simmr.diets = simmr.data$output[[1]]$BUGSoutput$sims.list$p # extract data from simmr
+  colnames(simmr.diets) = simmr.data$input$source_names # makes the column names match simmr
 
   # convert this to a dataframe for easier manipulation
   df = reshape2::melt(simmr.diets)
@@ -50,10 +50,10 @@ simmr_diet_output_mean = function(simmr.data, # simmr output file
 
   ## MAKE OUTPUT DATAFRAME
   # name blank dataframe with all species as a column
-  export_data = data.frame(row.names = rpath_groups, means = rep(0, length(rpath_groups)))
+  export_data = data.frame(row.names = rpath.groups, means = rep(0, length(rpath.groups)))
 
   # fill in mean columns with means for each species
-  for(species in rpath_groups) {
+  for(species in rpath.groups) {
     if (species %in% averages$Source) {
       export_data[species, "means"] = averages %>%
         filter(Source == species) %>%

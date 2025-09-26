@@ -15,10 +15,10 @@ diet_resample = function(diet.CI, # confidence interval data frame from simmr/mi
 {
   ## CHECK INPUTS ##
   # check diet_CI
-  if (!is.data.frame(diet_CI))
+  if (!is.data.frame(diet.CI))
     stop("diet_CI must be a dataframe produced by simmr_diet_output_dist")
   # check num_iterations
-  if (!is.numeric(num_iterations))
+  if (!is.numeric(num.iterations))
     stop("num_iterations must be an number")
 
   ##### SET UP #####
@@ -30,18 +30,18 @@ diet_resample = function(diet.CI, # confidence interval data frame from simmr/mi
   listspp = list()
 
   # fill in species names and CI from the diet_CI
-  for(species in rownames(diet_CI)){
-    low = diet_CI[species, "low"]
-    high = diet_CI[species, "high"]
+  for(species in rownames(diet.CI)){
+    low = diet.CI[species, "low"]
+    high = diet.CI[species, "high"]
     listspp[[species]] = c(low, high)
   }
 
   # make empty dataframe with species as the columns
   # extract row names
-  row_names = rownames(diet_CI)
+  row_names = rownames(diet.CI)
 
   # create the blank dataframe and rename rows
-  final_df = data.frame(matrix(NA, nrow = length(row_names), ncol = num_iterations))
+  final_df = data.frame(matrix(NA, nrow = length(row_names), ncol = num.iterations))
   rownames(final_df) = row_names
 
   ##### GENERATE NUMBERS AND MAKE SURE THEY SUM TO 1 #####
@@ -74,7 +74,7 @@ diet_resample = function(diet.CI, # confidence interval data frame from simmr/mi
     return(nums) # return the numbers to be passed onto the next part
   }
   # generate a diet for the specified number of iterations
-  for (z in 1:num_iterations) {
+  for (z in 1:num.iterations) {
     # generate a possible diet
     diet = generate_numbers(listspp)
     # put the diet in the final dataframe

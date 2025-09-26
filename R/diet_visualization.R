@@ -24,16 +24,16 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
 ){
   ## CHECK INPUTS ##
   # make sure resample_data_list is a list from the diet_resample function
-  if(!is.list(resample_data_list))
+  if(!is.list(resample.data.list))
     stop("resample_data_list must be the output from diet_resample")
 
   # make sure the species list is a vector
-  if(!is.character(species_list))
+  if(!is.character(species.list))
     stop("species_list must be a vector of character names that matches names in resample_data_list")
 
   # make sure all species in species_list are in diet_sensitivity_test_output
   # find missing spp
-  missing_spp = species_list[!species_list %in% names(diet_sensitivity_test_output)]
+  missing_spp = species.list[!species.list %in% names(diet.sensitivity.test.output)]
   # check if any are missing
   if (length(missing_spp) > 0)
     stop(paste("the following species in species_list are not found in diet_sensitivity_test_output:",
@@ -41,9 +41,9 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
 
   ## FUNCTION ##
   # if the plot type is histogram make histogram
-  if (plot_type == "histogram") {
-    for (i in 1:length(species_list)) {
-      species_name = species_list[i]
+  if (plot.type == "histogram") {
+    for (i in 1:length(species.list)) {
+      species_name = species.list[i]
       # define x-axis label (cannot be done inside the hist function)
       xlab_text = if (metric == "trophic level"){
         "Trophic Level"
@@ -54,14 +54,14 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
                    or 'biomass'")
         ""
       }
-      hist(diet_sensitivity_test_output[[species_name]],
+      hist(diet.sensitivity.test.output[[species_name]],
            main = species_name,
            xlab = xlab_text,
            ylab = "Frequency")
     }
-  } else if (plot_type == "boxplot") {
+  } else if (plot.type == "boxplot") {
     # select only the species in species_list
-    boxplot_species = diet_sensitivity_test_output[species_list]
+    boxplot_species = diet.sensitivity.test.output[species.list]
     # define title
     title = if (metric == "trophic level"){
       "Selected Species TL Distribution"
@@ -90,7 +90,7 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
   }
     else if (plot_type == "violin") {
       # select the species in species_list
-      violinplot_species = diet_sensitivity_test_output[species_list]
+      violinplot_species = diet.sensitivity.test.output[species.list]
       # define title outside of vioplot function
       title = if (metric == "trophic level"){
                 "Selected Species TL Distribution"
