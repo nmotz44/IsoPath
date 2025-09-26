@@ -54,7 +54,7 @@ diet_sensitivity_test = function(resample.data.list, # list of all diets that we
     }
 
     # Run ecopath model
-    REco = rpath(REco.params, eco.name = model_name)
+    REco = rpath(REco.params, eco.name = model.name)
 
     # Check if the model is balanced
     if (max(REco$EE) <= 1) {
