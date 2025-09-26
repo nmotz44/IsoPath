@@ -51,13 +51,13 @@ predator_list = c("AnchovyJuv", "BenthicInverts", "BlueCrab", "Fundulus", "MudSn
                   "Spot")
 # list of diets for each predator
 prey_list = list(
-  c("Phytoplankton", "Zooplankton", "Detritus", "BenthicAlg", "Ulva","Benthic Inverts", "MudSnail"), # diet for AnchovyJuv
+  c("Phytoplankton", "Zooplankton", "Detritus", "Benthic Inverts", "MudSnail"), # diet for AnchovyJuv
   c("Phytoplankton","Zooplankton", "BenthicAlg", "Ulva","Detritus"), # diet for BenthicInverts
   c("BenthicAlg", "Ulva","Detritus", "BenthicInverts", "MudSnail", "AnchovyJuv", "Silverside", "Fundulus"), # diet for BlueCrab
   c("Zooplankton","Detritus", "BenthicAlg", "Ulva","BenthicInverts", "MudSnail", "Silverside", "AnchovyJuv"), #diet for fundulus
   c("BenthicAlg", "Ulva", "Detritus"), # diet for mudsnail
   c("Phytoplankton", "Detritus"), # diet for oyster
-  c("Zooplankton", "BenthicAlg", "Ulva", "Detritus", "BenthicInverts", "MudSnail"), # diet for Silverside
+  c("Zooplankton", "Detritus", "BenthicInverts", "MudSnail"), # diet for Silverside
   c("Zooplankton","Detritus", "BenthicInverts", "MudSnail") # diet for spot
 )
 
@@ -230,7 +230,7 @@ webplot(REco, labels = T)
 
 One advantage of using Bayesian mixing models, such as *simmr*, is the probable distrubution of diets obtained. In this step, we will resample 1000 diets within the 95% confidence intervals from *simmr* (this percentage and number of diets can be adjusted if desired). This will be done using "simmr_diet_output_dist" to pull the confidence intervals from *simmr* (edit the CI in this function if desired), and then "diet_resample" to generate 1000 possible diets within this range (edit the number of diets in this function if desired). The "diet_resample" function is designed to always sample diets that add up to 100% so the diets can be passed to *Rpath* without issue. The 1000 diets are saved at the end of the loop and aggregated into their own list at the end of this chunk.
 
-``` {r, echo = TRUE}
+``` {r, echo = TRUE, results = 'hide'}
 # obtain diet distribution
 for (i in 1:length(simmr_list)) {
   # make list of the distribution
