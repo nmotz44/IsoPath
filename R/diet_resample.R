@@ -10,7 +10,7 @@
 #'
 #' @examples diet_resample(simmr_output_dist, num_iterations = 10000)
 diet_resample = function(diet.CI, # confidence interval data frame from simmr/mixSIAR_output_dist
-                         num_iterations = 1000) # number of iterations to run, default 1000
+                         num.iterations = 1000) # number of iterations to run, default 1000
 
 {
   ## CHECK INPUTS ##

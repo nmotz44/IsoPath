@@ -12,10 +12,10 @@
 #' @export
 #'
 #' @examples diet_sensitivity_test(diet_resample, REco_params, "Model Name")
-diet_sensitivity_test = function(resample_data_list, # list of all diets that were resampled
-                                 REco_params, # REco parameters
+diet_sensitivity_test = function(resample.data.list, # list of all diets that were resampled
+                                 REco.params, # REco parameters
                                  metric = "trophic level",
-                                 model_name = "Rpath Model" # name of model if necessary
+                                 model.name = "Rpath Model" # name of model if necessary
 )
 {
   ## CHECK PARAMETERS ##

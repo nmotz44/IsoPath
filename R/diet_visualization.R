@@ -17,9 +17,9 @@
 #' diet_visualization(diet_sensitivity_test_output, plot_type = "histogram")
 #' diet_visualization(diet_sensitivity_test_output, plot_type = "boxplot")
 #' diet_visualization(diet_sensitivity_test_output, species_list = c("species 1", "species 2")
-diet_visualization = function(diet_sensitivity_test_output, # output from diet_sensitivity_test
-                               plot_type = "histogram",      # type of plot to make, default is histogram
-                               species_list = names(diet_sensitivity_test_output), # species to plot, default is all species in the model
+diet_visualization = function(diet.sensitivity.test.output, # output from diet_sensitivity_test
+                               plot.type = "histogram",      # type of plot to make, default is histogram
+                               species.list = names(diet.sensitivity.test.output), # species to plot, default is all species in the model
                               metric = "trophic level" # metric being plotted for y-axis name
 ){
   ## CHECK INPUTS ##
