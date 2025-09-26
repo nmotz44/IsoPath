@@ -24,8 +24,8 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
 ){
   ## CHECK INPUTS ##
   # make sure resample_data_list is a list from the diet_resample function
-  if(!is.list(resample.data.list))
-    stop("resample_data_list must be the output from diet_resample")
+  if(!is.list(diet.sensitivity.test.output))
+    stop("diet.sensitivity.test.output must be the output from diet_resample")
 
   # make sure the species list is a vector
   if(!is.character(species.list))
