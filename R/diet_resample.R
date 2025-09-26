@@ -24,7 +24,7 @@ diet_resample = function(diet.CI, # confidence interval data frame from simmr/mi
   ##### SET UP #####
   ## convert the previous output to a list and set up a blank dataframe ##
   # set up initial progress bar
-  pb = txtProgressBar(min = 0, max = num_iterations, style = 3)
+  pb = txtProgressBar(min = 0, max = num.iterations, style = 3)
   
   # make empty list
   listspp = list()
