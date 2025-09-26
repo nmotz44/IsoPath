@@ -64,7 +64,7 @@ simmr_diet_output_dist = function(simmr.data, # simmr output file
 
   ## MAKE OUTPUT DATA FRAME ##
   all = data.frame(row.names = rpath.groups, low = rep(0, length(rpath.groups)),
-                   high = rep(0, length(rpath_groups)))
+                   high = rep(0, length(rpath.groups)))
 
   # fill the columns with the high and low CI intervals
   for (species in rpath.groups) {
