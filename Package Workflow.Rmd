@@ -305,8 +305,8 @@ diet_visualization(resampled.TL, plot.type = "boxplot",
                    species.list = c("BenthicInverts", "AnchovyJuv",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"))
 # make violin plot
-diet_visualization(resampled.TL, plot_type = "violin",
-                   species_list = c("BenthicInverts", "AnchovyJuv",
+diet_visualization(resampled.TL, plot.type = "violin",
+                   species.list = c("BenthicInverts", "AnchovyJuv",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"))
 ```
 ``` {r, echo = TRUE, fig.width = 4.5, fig.height = 3}
@@ -319,13 +319,13 @@ diet_visualization(resampled.bio, plot.type = "histogram",
 ```
 ``` {r, echo = TRUE, fig.width = 10, fig.height = 6}
 # make boxplot
-diet_visualization(resampled.bio, plot_type = "boxplot",
-                   species_list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
+diet_visualization(resampled.bio, plot.type = "boxplot",
+                   species.list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
                                     "BenthicInverts", "MudSnail", "Detritus"),
                    metric = "biomass")
 # make violin plot
-diet_visualization(resampled.bio, plot_type = "violin",
-                   species_list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
+diet_visualization(resampled.bio, plot.type = "violin",
+                   species.list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
                                     "BenthicInverts", "MudSnail", "Detritus"),
                    metric = "biomass")
 ```

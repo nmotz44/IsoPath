@@ -88,7 +88,7 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
             xlab = "Species",
             ylab = ylab_text)
   }
-    else if (plot_type == "violin") {
+    else if (plot.type == "violin") {
       # select the species in species_list
       violinplot_species = diet.sensitivity.test.output[species.list]
       # define title outside of vioplot function
