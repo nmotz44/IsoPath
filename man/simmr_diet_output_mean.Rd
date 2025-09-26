@@ -4,7 +4,7 @@
 \alias{simmr_diet_output_mean}
 \title{Pull the average diets from simmr to run through Rpath}
 \usage{
-simmr_diet_output_mean(simmr_data, rpath_groups)
+simmr_diet_output_mean(simmr.data, rpath.groups)
 }
 \arguments{
 \item{simmr_data}{the output from running a simmr model. For more infomration on this, please see the simmr documentation.}

@@ -5,20 +5,20 @@
 \title{Extract a range of diet possibilities from simmr within predefined confidence intervals}
 \usage{
 simmr_diet_output_dist(
-  simmr_data,
-  rpath_groups,
+  simmr.data,
+  rpath.groups,
   CI.low = 0.025,
   CI.high = 0.975
 )
 }
 \arguments{
-\item{simmr_data}{the output from running a simmr model. For more infomration on this, please see the simmr documentation.}
-
-\item{rpath_groups}{a vector of all the groups included in the rpath model. This is crucial because it will assign a percentage of 0 to every species that is in the Rpath model, but not in the simmr model so the data is formatted in a way to be passed to Rpath.}
-
 \item{CI.low}{a number between 0 and 1 specifying the low \% range to sample from.}
 
 \item{CI.high}{a number between 0 and 1 specifying the high \% range to sample from.}
+
+\item{simmr_data}{the output from running a simmr model. For more infomration on this, please see the simmr documentation.}
+
+\item{rpath_groups}{a vector of all the groups included in the rpath model. This is crucial because it will assign a percentage of 0 to every species that is in the Rpath model, but not in the simmr model so the data is formatted in a way to be passed to Rpath.}
 }
 \value{
 a list of the diet ranges within the specified range

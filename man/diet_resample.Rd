@@ -4,7 +4,7 @@
 \alias{diet_resample}
 \title{Resample within the diet distribution from simmr_output_dist.}
 \usage{
-diet_resample(diet_CI, num_iterations = 1000)
+diet_resample(diet.CI, num.iterations = 1000)
 }
 \arguments{
 \item{diet_CI}{a data frame with the confidence intervals of the consumer diets produced with simmr. The output from simmr_output_dist is intended to be used for this.}

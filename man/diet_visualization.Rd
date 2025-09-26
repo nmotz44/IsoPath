@@ -5,20 +5,20 @@
 \title{Quickly visualize trophic level changes from changes in diet}
 \usage{
 diet_visualization(
-  diet_sensitivity_test_output,
-  plot_type = "histogram",
-  species_list = names(diet_sensitivity_test_output),
+  diet.sensitivity.test.output,
+  plot.type = "histogram",
+  species.list = names(diet.sensitivity.test.output),
   metric = "trophic level"
 )
 }
 \arguments{
+\item{metric}{either "trophic level" or "biomass" to specify if you want to investigate trophic level or biomass changes with the changing diets. Default is "trophic level". This should match the metric used in diet_sensitivity_test, but it onlu changes the axis name in these graphs.}
+
 \item{diet_sensitivity_test_output}{list of the trophic levels from the Rpath sensitivity runs. The function is designed to use the output from diet_sensitivity_test}
 
 \item{plot_type}{type of plot to make, either "histogram", "boxplot", or "violin. Default is histogram where a seperate graph is made for each species. In boxplot, all species are plotted on the same graph.}
 
 \item{species_list}{a vector of all species the user wants plotted. Default is all, but a subset can be specified. For larger models where only a few species are of interest, a subset is recommend.}
-
-\item{metric}{either "trophic level" or "biomass" to specify if you want to investigate trophic level or biomass changes with the changing diets. Default is "trophic level". This should match the metric used in diet_sensitivity_test, but it onlu changes the axis name in these graphs.}
 }
 \value{
 plot(s) showing the variability of trophic levels related to different diet matricies.

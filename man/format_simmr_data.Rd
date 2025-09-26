@@ -11,10 +11,10 @@ format_simmr_data(
   d15N.column,
   consumer.names,
   prey.names,
-  disc.factors.c = 1,
+  disc.factors.c = 0.4,
   disc.factors.n = 3.4,
-  disc.factors.c.sd = 0.1,
-  disc.factors.n.sd = 0.1,
+  disc.factors.c.sd = 1.3,
+  disc.factors.n.sd = 1,
   data.type = "raw",
   d13C.column.sd = NA,
   d15N.column.sd = NA,
@@ -34,13 +34,13 @@ format_simmr_data(
 
 \item{prey.names}{a vector (or string) of the names of each prey to include in each consumer's simmr}
 
-\item{disc.factors.c}{a number representing the carbon discrimination factor (default is 1.0)}
+\item{disc.factors.c}{a number representing the carbon discrimination factor (default is 0.4)}
 
 \item{disc.factors.n}{a number representing the nitrogen discrimination factor (default is 3.4)}
 
-\item{disc.factors.c.sd}{a number representing standard deviation for the carbon discrimination factor (default is 0.1)}
+\item{disc.factors.c.sd}{a number representing standard deviation for the carbon discrimination factor (default is 1)}
 
-\item{disc.factors.n.sd}{a number representing standard deviation for the nitrogen discrimination factor (default is 0.1)}
+\item{disc.factors.n.sd}{a number representing standard deviation for the nitrogen discrimination factor (default is 1.3)}
 
 \item{data.type}{a chacter of the type of data. Either "raw" if raw data is used, or "means" if the prey data are already averaged, default is raw}
 
