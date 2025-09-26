@@ -51,7 +51,7 @@ predator_list = c("AnchovyJuv", "BenthicInverts", "BlueCrab", "Fundulus", "MudSn
                   "Spot")
 # list of diets for each predator
 prey_list = list(
-  c("Phytoplankton", "Zooplankton", "Detritus", "Benthic Inverts", "MudSnail"), # diet for AnchovyJuv
+  c("Phytoplankton", "Zooplankton", "Detritus", "MudSnail"), # diet for AnchovyJuv
   c("Phytoplankton","Zooplankton", "BenthicAlg", "Ulva","Detritus"), # diet for BenthicInverts
   c("BenthicAlg", "Ulva","Detritus", "BenthicInverts", "MudSnail", "AnchovyJuv", "Silverside", "Fundulus"), # diet for BlueCrab
   c("Zooplankton","Detritus", "BenthicAlg", "Ulva","BenthicInverts", "MudSnail", "Silverside", "AnchovyJuv"), #diet for fundulus

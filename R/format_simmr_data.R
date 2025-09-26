@@ -9,10 +9,10 @@
 #' @param d15N.column a character vector of the name of the column with nitrogen data
 #' @param consumer.names a vector (or string) of the names of each consumer to create a simmr object
 #' @param prey.names a vector (or string) of the names of each prey to include in each consumer's simmr
-#' @param disc.factors.c a number representing the carbon discrimination factor (default is 1.0)
+#' @param disc.factors.c a number representing the carbon discrimination factor (default is 0.4)
 #' @param disc.factors.n a number representing the nitrogen discrimination factor (default is 3.4)
-#' @param disc.factors.c.sd a number representing standard deviation for the carbon discrimination factor (default is 0.1)
-#' @param disc.factors.n.sd a number representing standard deviation for the nitrogen discrimination factor (default is 0.1)
+#' @param disc.factors.c.sd a number representing standard deviation for the carbon discrimination factor (default is 1)
+#' @param disc.factors.n.sd a number representing standard deviation for the nitrogen discrimination factor (default is 1.3)
 #' @param data.type a chacter of the type of data. Either "raw" if raw data is used, or "means" if the prey data are already averaged, default is raw
 #' @param d13C.column.sd a character vector of the name of the column with carbon standard deviation data, only needed if data.type is "means", default is NA
 #' @param d15N.column.sd a character vector of the name of the column with carbon standard deviation data, only needed if data.type is "means", default is NA
