@@ -1,166 +1,166 @@
-﻿d13C,d15N,species,species2,Ecopath_Group,Functional_Group,source,note
--17.12,12.89,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.11,13.8,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.52,13.3,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.27,13.78,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.74,14.1,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.39,14.24,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.42,13.82,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.43,13.86,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.12,14.16,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.2,13.29,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.04,13.64,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.63,15.76,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--19.39,14.2,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--19.22,14.01,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.99,13.7,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--14.04,8.73,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.4,12.63,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.14,12.23,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.16,13.69,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.39,13.15,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.5,10.71,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--17.04,13.75,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--18.7,14.03,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--17.06,12.87,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.98,14.62,Weakfish (PelagicFish),Weakfish,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--16.96,14.58,Weakfish (PelagicFish),Weakfish,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--17.66,14.31,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.31,14.27,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--14.79,11.54,Spot (BenthicFish),Spot,Spot,Spot,direct measurement,
--20.34,13.72,Spot (BenthicFish),Spot,Spot,Spot,direct measurement,
--17.99,15.03,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.42,14.79,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.09,14.35,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.04,14.82,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--19.57,14.31,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.33,14.74,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.62,14.63,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.35,14.76,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.64,14.81,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18,14.94,Anchovy (PelagicFish),Anchovies,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.84,13.52,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.4,13.02,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.14,14.1,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.97,13.93,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.17,13.68,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.53,13.84,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.92,12.51,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.82,14.53,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.43,14.86,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--18.09,13.89,Silverside (PelagicFish),Silversides,Silverside,Silverside,direct measurement,
--17.73,14.5,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--17.47,13.8,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--17.65,14.47,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--17.58,13.98,Silver Perch (PelagicFish),Silver Perch,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--18.27,14.18,Pigfish (PelagicFish),Pigfish,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--17.61,14.37,Pigfish (PelagicFish),Pigfish,Anchovy and Juvenile Fishes,AnchovyJuv,direct measurement,
--19.56,14.28,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.64,13.12,Spot (BenthicFish),Spot,Spot,Spot,direct measurement,
--16.69,14.34,Spot (BenthicFish),Spot,Spot,Spot,direct measurement,
--16.23,13.23,Spot (BenthicFish),Spot,Spot,Spot,direct measurement,
--15.05,13.46,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--12.1,8.11,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--14.39,12.94,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--14.94,13.14,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--15.12,13.62,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--16.32,14.43,Striped Killifish (BenthicFish),Striped Killifish,Fundulus,Fundulus,direct measurement,
--15.66,11.98,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.49,12.65,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--12.73,11.39,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--15.92,12.44,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.6,13.09,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--14.93,12.67,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--15.26,14.65,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.76,13.42,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.02,13,Mummichog (BenthicFish),Mummichog,Fundulus,Fundulus,direct measurement,
--16.28,9.58,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.39,8.98,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--14.91,8.79,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.79,10.98,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--14.98,8.21,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.86,9.39,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.36,9.39,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.9,6.75,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.14,7.5,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.01,8.84,Hermit Crab (BenthicInvertsebrate),Hermit Crabs,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.09,11.7,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.38,11.82,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--18.37,12.79,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.07,10.11,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.34,10.67,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--17.34,11.76,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.29,14.05,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--17.26,14,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.48,10.22,Grass Shrimp (BenthicInvertsebrate),Grass Shrimp,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.52,11.46,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--15.87,13.31,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--16.98,12.7,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--16.96,13.1,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--16.76,13.05,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--15.78,12.78,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--15.44,14.04,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--16.84,12.47,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--15.96,13.57,BlueCrab,Blue Crab,Blue Crab,BlueCrab,direct measurement,
--16.05,9.09,Mud Crab (BenthicInvertsebrate),Mud Crab,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.1,9.55,Mud Crab (BenthicInvertsebrate),Mud Crab,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.66,11.94,Mud Crab (BenthicInvertsebrate),Mud Crab,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.26,11.23,Mud Crab (BenthicInvertsebrate),Mud Crab,Benthic Invertebrate,BenthicInverts,direct measurement,
--16.17,10.57,Mud Crab (BenthicInvertsebrate),Mud Crab,Benthic Invertebrate,BenthicInverts,direct measurement,
--15.58,11.86,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--13.79,13.2,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--13.64,13.63,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--14.26,11.77,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--14.11,12.96,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--13.71,13.4,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--14.05,12.48,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--15.23,12.41,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--14.01,12.8,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--13.81,12.62,MudSnail,Mud Snail,Mud Snail,MudSnail,direct measurement,
--18.98,10.7,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--19.05,10.44,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--19.74,11.02,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--19.44,10.05,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--18.84,10.35,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--19.28,10.35,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--18.96,10.46,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--18.88,10.25,Oyster,Oyster,Oyster,Oyster,direct measurement,muscle tissue
--19.38,7.3,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.45,7.04,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--20.14,7.62,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.84,6.65,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.24,6.95,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.68,6.95,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.36,7.06,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--19.28,6.85,Phytoplankton,Phytoplankton,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
--18.39,11.63,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.82,11.39,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.49,10.95,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.44,11.42,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--19.97,10.91,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.73,11.34,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--19.02,11.23,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.75,11.36,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--19.04,11.41,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.4,11.54,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--19.24,10.12,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--17.8,9.62,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--17.54,10.7,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--18.37,10.53,Zoopplankton,Zooplankton,Zooplankton,Zooplankton,assumed,1 step down from anchovy
--9.33,11.63,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--11.36,10.79,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--9.81,11.52,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--11.93,9.04,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--13.02,9.09,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--13,9.27,Ulva,Ulva,Benthic Algae,Ulva,direct measurement,
--18.99,10.68,Black Algea,Agardhiella,Benthic Algae,BenthicAlg,direct measurement,
--18.86,11.04,Black Algea,Agardhiella,Benthic Algae,BenthicAlg,direct measurement,
--19,11.08,Black Algea,Agardhiella,Benthic Algae,BenthicAlg,direct measurement,
--19.67,12.6,Green Algea,Enteromorpha,Benthic Algae,BenthicAlg,direct measurement,
--19.45,12.38,Green Algea,Enteromorpha,Benthic Algae,BenthicAlg,direct measurement,
--18.98,12.7,Green Algea,Enteromorpha,Benthic Algae,BenthicAlg,direct measurement,
--18.3,3.4,Detritus,Detritus,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
--17,4.6,Detritus,Detritus,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
--15.7,5.8,Detritus,Detritus,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
--14.4,7,Detritus,Detritus,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
--13.1,8.2,Detritus,Detritus,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
+﻿d13C,d15N,Species,Functional_Group,source,note
+-17.12,12.89,Silversides,Silverside,direct measurement,
+-18.11,13.8,Silversides,Silverside,direct measurement,
+-17.52,13.3,Silversides,Silverside,direct measurement,
+-18.27,13.78,Silversides,Silverside,direct measurement,
+-17.74,14.1,Silversides,Silverside,direct measurement,
+-17.39,14.24,Silversides,Silverside,direct measurement,
+-18.42,13.82,Silversides,Silverside,direct measurement,
+-17.43,13.86,Silversides,Silverside,direct measurement,
+-18.12,14.16,Silversides,Silverside,direct measurement,
+-17.2,13.29,Silversides,Silverside,direct measurement,
+-17.04,13.64,Silversides,Silverside,direct measurement,
+-17.63,15.76,Anchovies,AnchovyJuv,direct measurement,
+-19.39,14.2,Anchovies,AnchovyJuv,direct measurement,
+-19.22,14.01,Anchovies,AnchovyJuv,direct measurement,
+-18.99,13.7,Anchovies,AnchovyJuv,direct measurement,
+-14.04,8.73,Striped Killifish,Fundulus,direct measurement,
+-16.4,12.63,Striped Killifish,Fundulus,direct measurement,
+-16.14,12.23,Striped Killifish,Fundulus,direct measurement,
+-16.16,13.69,Striped Killifish,Fundulus,direct measurement,
+-16.39,13.15,Striped Killifish,Fundulus,direct measurement,
+-16.5,10.71,Mummichog,Fundulus,direct measurement,
+-17.04,13.75,Mummichog,Fundulus,direct measurement,
+-18.7,14.03,Mummichog,Fundulus,direct measurement,
+-17.06,12.87,Mummichog,Fundulus,direct measurement,
+-16.98,14.62,Weakfish,AnchovyJuv,direct measurement,
+-16.96,14.58,Weakfish,AnchovyJuv,direct measurement,
+-17.66,14.31,Silver Perch,AnchovyJuv,direct measurement,
+-18.31,14.27,Silver Perch,AnchovyJuv,direct measurement,
+-14.79,11.54,Spot,Spot,direct measurement,
+-20.34,13.72,Spot,Spot,direct measurement,
+-17.99,15.03,Anchovies,AnchovyJuv,direct measurement,
+-18.42,14.79,Anchovies,AnchovyJuv,direct measurement,
+-18.09,14.35,Anchovies,AnchovyJuv,direct measurement,
+-18.04,14.82,Anchovies,AnchovyJuv,direct measurement,
+-19.57,14.31,Anchovies,AnchovyJuv,direct measurement,
+-18.33,14.74,Anchovies,AnchovyJuv,direct measurement,
+-18.62,14.63,Anchovies,AnchovyJuv,direct measurement,
+-18.35,14.76,Anchovies,AnchovyJuv,direct measurement,
+-18.64,14.81,Anchovies,AnchovyJuv,direct measurement,
+-18,14.94,Anchovies,AnchovyJuv,direct measurement,
+-18.84,13.52,Silversides,Silverside,direct measurement,
+-17.4,13.02,Silversides,Silverside,direct measurement,
+-17.14,14.1,Silversides,Silverside,direct measurement,
+-17.97,13.93,Silversides,Silverside,direct measurement,
+-18.17,13.68,Silversides,Silverside,direct measurement,
+-18.53,13.84,Silversides,Silverside,direct measurement,
+-17.92,12.51,Silversides,Silverside,direct measurement,
+-18.82,14.53,Silversides,Silverside,direct measurement,
+-17.43,14.86,Silversides,Silverside,direct measurement,
+-18.09,13.89,Silversides,Silverside,direct measurement,
+-17.73,14.5,Silver Perch,AnchovyJuv,direct measurement,
+-17.47,13.8,Silver Perch,AnchovyJuv,direct measurement,
+-17.65,14.47,Silver Perch,AnchovyJuv,direct measurement,
+-17.58,13.98,Silver Perch,AnchovyJuv,direct measurement,
+-18.27,14.18,Pigfish,AnchovyJuv,direct measurement,
+-17.61,14.37,Pigfish,AnchovyJuv,direct measurement,
+-19.56,14.28,Mummichog,Fundulus,direct measurement,
+-16.64,13.12,Spot,Spot,direct measurement,
+-16.69,14.34,Spot,Spot,direct measurement,
+-16.23,13.23,Spot,Spot,direct measurement,
+-15.05,13.46,Striped Killifish,Fundulus,direct measurement,
+-12.1,8.11,Striped Killifish,Fundulus,direct measurement,
+-14.39,12.94,Striped Killifish,Fundulus,direct measurement,
+-14.94,13.14,Striped Killifish,Fundulus,direct measurement,
+-15.12,13.62,Striped Killifish,Fundulus,direct measurement,
+-16.32,14.43,Striped Killifish,Fundulus,direct measurement,
+-15.66,11.98,Mummichog,Fundulus,direct measurement,
+-16.49,12.65,Mummichog,Fundulus,direct measurement,
+-12.73,11.39,Mummichog,Fundulus,direct measurement,
+-15.92,12.44,Mummichog,Fundulus,direct measurement,
+-16.6,13.09,Mummichog,Fundulus,direct measurement,
+-14.93,12.67,Mummichog,Fundulus,direct measurement,
+-15.26,14.65,Mummichog,Fundulus,direct measurement,
+-16.76,13.42,Mummichog,Fundulus,direct measurement,
+-16.02,13,Mummichog,Fundulus,direct measurement,
+-16.28,9.58,Hermit Crabs,BenthicInverts,direct measurement,
+-15.39,8.98,Hermit Crabs,BenthicInverts,direct measurement,
+-14.91,8.79,Hermit Crabs,BenthicInverts,direct measurement,
+-16.79,10.98,Hermit Crabs,BenthicInverts,direct measurement,
+-14.98,8.21,Hermit Crabs,BenthicInverts,direct measurement,
+-16.86,9.39,Hermit Crabs,BenthicInverts,direct measurement,
+-15.36,9.39,Hermit Crabs,BenthicInverts,direct measurement,
+-15.9,6.75,Hermit Crabs,BenthicInverts,direct measurement,
+-16.14,7.5,Hermit Crabs,BenthicInverts,direct measurement,
+-16.01,8.84,Hermit Crabs,BenthicInverts,direct measurement,
+-16.09,11.7,Grass Shrimp,BenthicInverts,direct measurement,
+-16.38,11.82,Grass Shrimp,BenthicInverts,direct measurement,
+-18.37,12.79,Grass Shrimp,BenthicInverts,direct measurement,
+-15.07,10.11,Grass Shrimp,BenthicInverts,direct measurement,
+-16.34,10.67,Grass Shrimp,BenthicInverts,direct measurement,
+-17.34,11.76,Grass Shrimp,BenthicInverts,direct measurement,
+-16.29,14.05,Grass Shrimp,BenthicInverts,direct measurement,
+-17.26,14,Grass Shrimp,BenthicInverts,direct measurement,
+-15.48,10.22,Grass Shrimp,BenthicInverts,direct measurement,
+-15.52,11.46,Blue Crab,BlueCrab,direct measurement,
+-15.87,13.31,Blue Crab,BlueCrab,direct measurement,
+-16.98,12.7,Blue Crab,BlueCrab,direct measurement,
+-16.96,13.1,Blue Crab,BlueCrab,direct measurement,
+-16.76,13.05,Blue Crab,BlueCrab,direct measurement,
+-15.78,12.78,Blue Crab,BlueCrab,direct measurement,
+-15.44,14.04,Blue Crab,BlueCrab,direct measurement,
+-16.84,12.47,Blue Crab,BlueCrab,direct measurement,
+-15.96,13.57,Blue Crab,BlueCrab,direct measurement,
+-16.05,9.09,Mud Crab,BenthicInverts,direct measurement,
+-16.1,9.55,Mud Crab,BenthicInverts,direct measurement,
+-15.66,11.94,Mud Crab,BenthicInverts,direct measurement,
+-16.26,11.23,Mud Crab,BenthicInverts,direct measurement,
+-16.17,10.57,Mud Crab,BenthicInverts,direct measurement,
+-15.58,11.86,Mud Snail,MudSnail,direct measurement,
+-13.79,13.2,Mud Snail,MudSnail,direct measurement,
+-13.64,13.63,Mud Snail,MudSnail,direct measurement,
+-14.26,11.77,Mud Snail,MudSnail,direct measurement,
+-14.11,12.96,Mud Snail,MudSnail,direct measurement,
+-13.71,13.4,Mud Snail,MudSnail,direct measurement,
+-14.05,12.48,Mud Snail,MudSnail,direct measurement,
+-15.23,12.41,Mud Snail,MudSnail,direct measurement,
+-14.01,12.8,Mud Snail,MudSnail,direct measurement,
+-13.81,12.62,Mud Snail,MudSnail,direct measurement,
+-18.98,10.7,Oyster,Oyster,direct measurement,muscle tissue
+-19.05,10.44,Oyster,Oyster,direct measurement,muscle tissue
+-19.74,11.02,Oyster,Oyster,direct measurement,muscle tissue
+-19.44,10.05,Oyster,Oyster,direct measurement,muscle tissue
+-18.84,10.35,Oyster,Oyster,direct measurement,muscle tissue
+-19.28,10.35,Oyster,Oyster,direct measurement,muscle tissue
+-18.96,10.46,Oyster,Oyster,direct measurement,muscle tissue
+-18.88,10.25,Oyster,Oyster,direct measurement,muscle tissue
+-19.38,7.3,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.45,7.04,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-20.14,7.62,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.84,6.65,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.24,6.95,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.68,6.95,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.36,7.06,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-19.28,6.85,Phytoplankton,Phytoplankton,assumed,1 step down from oyster
+-18.39,11.63,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.82,11.39,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.49,10.95,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.44,11.42,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-19.97,10.91,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.73,11.34,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-19.02,11.23,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.75,11.36,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-19.04,11.41,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.4,11.54,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-19.24,10.12,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-17.8,9.62,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-17.54,10.7,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-18.37,10.53,Zooplankton,Zooplankton,assumed,1 step down from anchovy
+-9.33,11.63,Ulva,Ulva,direct measurement,
+-11.36,10.79,Ulva,Ulva,direct measurement,
+-9.81,11.52,Ulva,Ulva,direct measurement,
+-11.93,9.04,Ulva,Ulva,direct measurement,
+-13.02,9.09,Ulva,Ulva,direct measurement,
+-13,9.27,Ulva,Ulva,direct measurement,
+-18.99,10.68,Agardhiella,BenthicAlg,direct measurement,
+-18.86,11.04,Agardhiella,BenthicAlg,direct measurement,
+-19,11.08,Agardhiella,BenthicAlg,direct measurement,
+-19.67,12.6,Enteromorpha,BenthicAlg,direct measurement,
+-19.45,12.38,Enteromorpha,BenthicAlg,direct measurement,
+-18.98,12.7,Enteromorpha,BenthicAlg,direct measurement,
+-18.3,3.4,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
+-17,4.6,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
+-15.7,5.8,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
+-14.4,7,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
+-13.1,8.2,Detritus,Detritus,Fantle et al. 1999,5 numbers that result in the mean and sd from this study (raw data not available)
