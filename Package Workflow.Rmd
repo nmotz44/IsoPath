@@ -16,7 +16,7 @@ if (!require(Rpath)) install_github("NOAA-EDAB/Rpath")
 if (!require(vioplot)) install.packages('vioplot')
 if (!require(dplyr)) install.packages('dplyr')
 if (!require(simmr)) install.packages('simmr')
-if (!require(IsoPath)) install_github('nmotz44/IsoPath') # uncomment when this is on github
+if (!require(IsoPath)) install_github('nmotz44/IsoPath') 
 ```
 
 ## Setup Workspace
