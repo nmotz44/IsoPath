@@ -14,6 +14,6 @@
 #'
 #' @examples
 #' # example code
-#'  data(AFS_SIA_Data)
+#'  data(Data)
 
-"AFS_SIA_Data"
+"data"
