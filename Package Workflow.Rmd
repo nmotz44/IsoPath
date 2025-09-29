@@ -12,11 +12,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ``` {r, include = FALSE}
 # install packages if needed
 if (!require(devtools)) install.packages('devtools')
-if (!require(Rpath)) install_github("NOAA-EDAB/Rpath")
+if (!require(Rpath)) devtools::install_github("NOAA-EDAB/Rpath")
 if (!require(vioplot)) install.packages('vioplot')
-if (!require(dplyr)) install.packages('dplyr')
+if (!require(tidyverse)) install.packages('tidyverse')
 if (!require(simmr)) install.packages('simmr')
-if (!require(IsoPath)) install_github('nmotz44/IsoPath') 
+if (!require(IsoPath)) devtools::install_github('nmotz44/IsoPath') 
 ```
 
 ## Setup Workspace
@@ -31,8 +31,9 @@ rm(list = ls())
 set.seed(22)
 
 # load required packages
-library(simmr)
-library(Rpath)
+#library(tidyverse)
+#library(simmr)
+#library(Rpath)
 library(IsoPath)
 
 # load data
