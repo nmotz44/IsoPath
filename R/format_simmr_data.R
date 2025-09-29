@@ -18,7 +18,9 @@
 #' @param d15N.column.sd a character vector of the name of the column with carbon standard deviation data, only needed if data.type is "means", default is NA
 #' @param group.column a character vector of the name of the column with predator grouping information for simmr. The default is NA, so only specify if there is a grouping column
 #'
-#' @import dplyr
+#' @import tidyverse
+#' @import simmr
+#' @import Rpath
 #' @return a simmr object that can be utilized in any function within the simmr package
 #' @export
 #'

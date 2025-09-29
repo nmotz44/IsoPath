@@ -36,7 +36,6 @@ library(Rpath)
 library(IsoPath)
 
 # load data
-# data("AFS_SIA_Data")
 iso_data = data
 ```
 

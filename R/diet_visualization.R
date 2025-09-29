@@ -103,9 +103,9 @@ diet_visualization = function(diet.sensitivity.test.output, # output from diet_s
               }
       # make violin plot
       vioplot::vioplot(violinplot_species,
-              main = title,
-              xlab = "",
-              ylab = "")
+                       main = title,
+                       xlab = "",
+                       ylab = "")
       if (metric == "trophic level"){
         # add y axis label
         mtext("Trophic Level", side = 2, line = 3)
