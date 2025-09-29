@@ -364,7 +364,7 @@ Carlisle</h4>
 <p>Set up the workspace to run the package and models. This includes
 clearing any previously saved variables and loading the required
 packages. The packages needed are: <em>simmr</em>, <em>Rpath</em>, and
-<em>IsoPath</em>. <em>dplyr</em> and <em>vioplot</em> are needed for
+<em>IsoPath</em>. <em>tidyverse</em> and <em>vioplot</em> are needed for
 functions within <em>IsoPath</em> but will be automatically loaded with
 the package, please make sure these packages are installed. In order to
 load and use <em>simmr</em>, <em>JAGS</em> must be installed to your
@@ -380,12 +380,12 @@ rm(list = ls())
 set.seed(22)
 
 # load required packages
-library(simmr)
-library(Rpath)
+#library(tidyverse)
+#library(simmr)
+#library(Rpath)
 library(IsoPath)
 
 # load data
-# data(&quot;AFS_SIA_Data&quot;)
 iso_data = data</code></pre>
 </div>
 <div id="obtaining-diet-estimates-using-simmr" class="section level2">

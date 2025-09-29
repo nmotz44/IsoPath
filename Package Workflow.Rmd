@@ -5,11 +5,12 @@ author: Noah Motz, Brendan Campbell, Rileigh Hudock, Tess Avery, Ben Marsaly, Ho
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-``` {r, include = FALSE}
+```{r, include = FALSE}
 # install packages if needed
 if (!require(devtools)) install.packages('devtools')
 if (!require(Rpath)) devtools::install_github("NOAA-EDAB/Rpath")
@@ -21,7 +22,7 @@ if (!require(IsoPath)) devtools::install_github('nmotz44/IsoPath')
 
 ## Setup Workspace
 
-Set up the workspace to run the package and models. This includes clearing any previously saved variables and loading the required packages. The packages needed are: *simmr*, *Rpath*, and *IsoPath*. *tidyverse* and *vioplot* are needed for functions within *IsoPath* but will be automatically loaded with the package, please make sure these packages are installed. In order to load and use *simmr*, *JAGS* must be installed to your operating system. Please see information from the simmr package (https://cran.r-project.org/web/packages/simmr/vignettes/simmr.html), and JAGS (https://sourceforge.net/projects/mcmc-jags/). Lastly, we will load the isotope data (iso_data) that is needed to run the example model used in the paper. This data is within the *IsoPath* package and will be loaded below using the function "example_data".
+Set up the workspace to run the package and models. This includes clearing any previously saved variables and loading the required packages. The packages needed are: *simmr*, *Rpath*, and *IsoPath*. *tidyverse* and *vioplot* are needed for functions within *IsoPath* but will be automatically loaded with the package, please make sure these packages are installed. In order to load and use *simmr*, *JAGS* must be installed to your operating system. Please see information from the simmr package (<https://cran.r-project.org/web/packages/simmr/vignettes/simmr.html>), and JAGS (<https://sourceforge.net/projects/mcmc-jags/>). Lastly, we will load the isotope data (iso_data) that is needed to run the example model used in the paper. This data is within the *IsoPath* package and will be loaded below using the function "example_data".
 
 ```{r, echo = TRUE, results = 'hide', message = FALSE}
 # clear workspace
@@ -31,19 +32,15 @@ rm(list = ls())
 set.seed(22)
 
 # load required packages
-#library(tidyverse)
-#library(simmr)
-#library(Rpath)
 library(IsoPath)
 
 # load data
 iso_data = data
 ```
 
-
 ## Obtaining Diet Estimates using *simmr*
 
-In this section, we will utilize functions from both *IsoPath* and *simmr* to take the isotope data from "iso_data" and run it through *simmr*. Since most *Rpath* models will have many functional groups, an example loop is provided to simplify the process. Prior to the loop, each predator within the model that we will estimate diets for with SIA are written out in "predator_list", and the corresponding prey items that are to be included in *simmr* are created in "prey_list". In this step it is crucial that the names match exactly to those in the isotope dataframe (iso_data), and that the positions in predator_list and prey_list are the same relative to each other. For example, AnchovyJuv is the first functional group in predator_list, so their diet is the first one in prey_list. The loop at the end will run each predator through *simmr* and obtain diet estimates for each. For further details on *simmr* please see Govan E, Parnell A (2019). simmr: A Stable Isotope Mixing Model. R package version 0.5.1.216, https://CRAN.R-project.org/package=simmr. The function "format_simmr_data" is from *IsoPath* and will pull all the information from "iso_data" needed for *simmr*, avoiding the need to have a seperate file for each predator. The diet form each will be saved as a *simmr* object that will be used later.
+In this section, we will utilize functions from both *IsoPath* and *simmr* to take the isotope data from "iso_data" and run it through *simmr*. Since most *Rpath* models will have many functional groups, an example loop is provided to simplify the process. Prior to the loop, each predator within the model that we will estimate diets for with SIA are written out in "predator_list", and the corresponding prey items that are to be included in *simmr* are created in "prey_list". In this step it is crucial that the names match exactly to those in the isotope dataframe (iso_data), and that the positions in predator_list and prey_list are the same relative to each other. For example, AnchovyJuv is the first functional group in predator_list, so their diet is the first one in prey_list. The loop at the end will run each predator through *simmr* and obtain diet estimates for each. For further details on *simmr* please see Govan E, Parnell A (2019). simmr: A Stable Isotope Mixing Model. R package version 0.5.1.216, <https://CRAN.R-project.org/package=simmr>. The function "format_simmr_data" is from *IsoPath* and will pull all the information from "iso_data" needed for *simmr*, avoiding the need to have a seperate file for each predator. The diet form each will be saved as a *simmr* object that will be used later.
 
 ```{r pressure, echo = TRUE, results = 'hide', message = FALSE}
 # list of species that needs simmr
@@ -93,9 +90,9 @@ for (i in 1:length(predator_list)){
 
 ## Set up Basic *Rpath* Parameters
 
-This section will input the basic Ecopath parameters into an *Rpath* object so the model can be run later. For more information on how to utilize and import data into *Rpath*, please see Aydin K, Lucey S, Gaichas S (2024). Rpath: R implementation of Ecopath with Ecosim. R package version 0.9.1, https://github.com/NOAA-EDAB/Rpath. and https://doi.org/10.1016/j.ecolmodel.2020.109057. In this step, it is important that the group names in "groups" match those that were used in the *simmr* model so the data can be transfered later. 
+This section will input the basic Ecopath parameters into an *Rpath* object so the model can be run later. For more information on how to utilize and import data into *Rpath*, please see Aydin K, Lucey S, Gaichas S (2024). Rpath: R implementation of Ecopath with Ecosim. R package version 0.9.1, <https://github.com/NOAA-EDAB/Rpath>. and <https://doi.org/10.1016/j.ecolmodel.2020.109057>. In this step, it is important that the group names in "groups" match those that were used in the *simmr* model so the data can be transfered later.
 
-``` {r, echo = TRUE}
+```{r, echo = TRUE}
 # create vector of group names
 groups = c('Phytoplankton', 'BenthicAlgae', 'Oyster', 'Zooplankton','MudSnail', 'BenthicInverts', 'AnchovyJuv',
            'Silverside', 'Fundulus', 'Spot','BlueCrab', 'Detritus', 'Fishing')
@@ -183,12 +180,11 @@ REco.params$model[, Fishing := land]
 REco.params$model[, Fishing.disc := disc]
 ```
 
-
 ## Obtain the diet estimates from the *simmr* models
 
-This section will pull out the average diet from the *simmr* outputs to pass these to *Rpath* for the intial model run. First, a list called "simmr_list" is made of all the *simmr* outputs generated in the initial for loop. Then, this for loop will use the simmr_diet_output_mean function from *IsoPath* to make the diet information from *simmr* in the correct format to pass to *Rpath*. The final step of the loop will save this output to be put into *Rpath* later. 
+This section will pull out the average diet from the *simmr* outputs to pass these to *Rpath* for the intial model run. First, a list called "simmr_list" is made of all the *simmr* outputs generated in the initial for loop. Then, this for loop will use the simmr_diet_output_mean function from *IsoPath* to make the diet information from *simmr* in the correct format to pass to *Rpath*. The final step of the loop will save this output to be put into *Rpath* later.
 
-``` {r, echo = TRUE}
+```{r, echo = TRUE}
 # make list of simmr objects
 simmr_list = list(simmr_AnchovyJuv, simmr_BenthicInverts, simmr_BlueCrab, simmr_Fundulus, simmr_MudSnail,
                   simmr_Oyster, simmr_Silverside, simmr_Spot)
@@ -206,7 +202,7 @@ for (i in 1:length(simmr_list)){
 
 This section will pass the diets obtained in the previous step into *Rpath*, and then run *Rpath* and create a webplot. For more information on how to use *Rpath* please see THE FOLLOWING PAPER AND RPACKAGE INFORMATION
 
-``` {r, echo = TRUE, fig.width = 10, fig.height = 6}
+```{r, echo = TRUE, fig.width = 10, fig.height = 6}
 # input diets for each species
 REco.params$diet[, AnchovyJuv := c(diet_AnchovyJuv)]
 REco.params$diet[, Fundulus := c(diet_Fundulus)]
@@ -227,12 +223,11 @@ REco
 webplot(REco, labels = T)
 ```
 
-
 ## Test diet sensitivity
 
 One advantage of using Bayesian mixing models, such as *simmr*, is the probable distrubution of diets obtained. In this step, we will resample 1000 diets within the 95% confidence intervals from *simmr* (this percentage and number of diets can be adjusted if desired). This will be done using "simmr_diet_output_dist" to pull the confidence intervals from *simmr* (edit the CI in this function if desired), and then "diet_resample" to generate 1000 possible diets within this range (edit the number of diets in this function if desired). The "diet_resample" function is designed to always sample diets that add up to 100% so the diets can be passed to *Rpath* without issue. The 1000 diets are saved at the end of the loop and aggregated into their own list at the end of this chunk.
 
-``` {r, echo = TRUE, results = 'hide'}
+```{r, echo = TRUE, results = 'hide'}
 # obtain diet distribution
 for (i in 1:length(simmr_list)) {
   # make list of the distribution
@@ -260,13 +255,13 @@ resample_data_list <- list(
 
 This next code will run an *Rpath* for each 1000 possible diets created for each functional group created in the previous section and saved in "resample_data_list". This will be done using the "diet_sensitivity_test" function which is designed to run *Rpath* for all the diets included in the input list. If the diet combinations result in a non-balanced model, the information is discarded, but if the model is balanced the trophic level estimate for each functional group is saved, called "resamped.TL" in this example.
 
-``` {r, echo = TRUE, results = 'hide'}
+```{r, echo = TRUE, results = 'hide'}
 # pass diets to rpath and examine sensitivity
 resampled.TL = diet_sensitivity_test(resample_data_list, REco.params)
 resampled.bio = diet_sensitivity_test(resample_data_list, REco.params, metric = "biomass")
 ```
 
-``` {r, echo = TRUE} 
+```{r, echo = TRUE}
 # check how many models were balanced
 sum(!is.na(resampled.TL$Phytoplankton))
 
@@ -293,7 +288,7 @@ print(summary.troph)
 
 This section will use the information saved in "resampled.TL" to visualize how the trophic levels changed with different diets. This will be done using the "diet_visualization" function and this can create histograms, boxplots, or violin plots depending on the input for plot_type. A separate histogram will be created for each functional group in the model, but all groups will be put on the same box/violin plot. Additionally, specific groups to plot can be specified using species_list. This will be very helpful in large models where only a few functional groups are of interest. If no species are specified, all functional groups will be plotted. For biomass, we inlcude the groups were the biomass is estimated by Rpath including: Phytoplankton, Zooplankton, Benthic Algae, Benthic Invertebrates, Mud Snail, and Detritus.
 
-``` {r, echo = TRUE, fig.width = 4.5, fig.height = 3}
+```{r, echo = TRUE, fig.width = 4.5, fig.height = 3}
 ## Trophic Level
 # make histograms
 diet_visualization(resampled.TL, plot.type = "histogram",
@@ -301,7 +296,8 @@ diet_visualization(resampled.TL, plot.type = "histogram",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"),
                    metric = "trophic level")
 ```
-``` {r, echo = TRUE, fig.width = 10, fig.height = 6}
+
+```{r, echo = TRUE, fig.width = 10, fig.height = 6}
 # make boxplot
 diet_visualization(resampled.TL, plot.type = "boxplot",
                    species.list = c("BenthicInverts", "AnchovyJuv",
@@ -311,7 +307,8 @@ diet_visualization(resampled.TL, plot.type = "violin",
                    species.list = c("BenthicInverts", "AnchovyJuv",
                                     "Silverside", "Fundulus", "Spot", "BlueCrab"))
 ```
-``` {r, echo = TRUE, fig.width = 4.5, fig.height = 3}
+
+```{r, echo = TRUE, fig.width = 4.5, fig.height = 3}
 ## Biomass
 # make histograms
 diet_visualization(resampled.bio, plot.type = "histogram",
@@ -319,7 +316,8 @@ diet_visualization(resampled.bio, plot.type = "histogram",
                                     "BenthicInverts", "MudSnail", "Detritus"),
                    metric = "biomass")
 ```
-``` {r, echo = TRUE, fig.width = 10, fig.height = 6}
+
+```{r, echo = TRUE, fig.width = 10, fig.height = 6}
 # make boxplot
 diet_visualization(resampled.bio, plot.type = "boxplot",
                    species.list = c("Phytoplankton", "Zooplankton", "BenthicAlgae", 
@@ -331,21 +329,3 @@ diet_visualization(resampled.bio, plot.type = "violin",
                                     "BenthicInverts", "MudSnail", "Detritus"),
                    metric = "biomass")
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
