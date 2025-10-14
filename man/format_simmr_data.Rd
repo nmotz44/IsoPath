@@ -9,15 +9,19 @@ format_simmr_data(
   species.column,
   d13C.column,
   d15N.column,
+  d34S.column = NA,
   consumer.names,
   prey.names,
   disc.factors.c = 0.4,
   disc.factors.n = 3.4,
+  disc.factors.s = NA,
   disc.factors.c.sd = 1.3,
   disc.factors.n.sd = 1,
+  disc.factors.s.sd = NA,
   data.type = "raw",
   d13C.column.sd = NA,
   d15N.column.sd = NA,
+  d34S.column.sd = NA,
   group.column = NA
 )
 }
@@ -30,6 +34,8 @@ format_simmr_data(
 
 \item{d15N.column}{a character vector of the name of the column with nitrogen data}
 
+\item{d34S.column}{a character vector of the name of the column with sulfur data (default is NA)}
+
 \item{consumer.names}{a vector (or string) of the names of each consumer to create a simmr object}
 
 \item{prey.names}{a vector (or string) of the names of each prey to include in each consumer's simmr}
@@ -38,15 +44,21 @@ format_simmr_data(
 
 \item{disc.factors.n}{a number representing the nitrogen discrimination factor (default is 3.4)}
 
+\item{disc.factors.s}{a number representing the sulfur distrimination factor (default is NA)}
+
 \item{disc.factors.c.sd}{a number representing standard deviation for the carbon discrimination factor (default is 1)}
 
 \item{disc.factors.n.sd}{a number representing standard deviation for the nitrogen discrimination factor (default is 1.3)}
+
+\item{disc.factors.s.sd}{a number representing standard deviation for the sulfur discrimination factor (default is NA)}
 
 \item{data.type}{a chacter of the type of data. Either "raw" if raw data is used, or "means" if the prey data are already averaged, default is raw}
 
 \item{d13C.column.sd}{a character vector of the name of the column with carbon standard deviation data, only needed if data.type is "means", default is NA}
 
-\item{d15N.column.sd}{a character vector of the name of the column with carbon standard deviation data, only needed if data.type is "means", default is NA}
+\item{d15N.column.sd}{a character vector of the name of the column with nitrogen standard deviation data, only needed if data.type is "means", default is NA}
+
+\item{d34S.column.sd}{a character vector of the name of the column with sulfur standard deviation data, only needed if data.type is "means", default is NA}
 
 \item{group.column}{a character vector of the name of the column with predator grouping information for simmr. The default is NA, so only specify if there is a grouping column}
 }
