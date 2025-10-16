@@ -54,7 +54,7 @@ format_simmr_data = function(data, # data frame of raw SIA data
   if(!is.data.frame(data))
     stop("data must be a data frame or a tibble")
   # make sure consumer names and prey names are character vectors
-  if(!is.character(consumer.names) || !is.character(prey.names)) {
+  if(!is.character(consumer.names)) {#|| !is.character(prey.names)) {
     stop("consumer.names and prey.names must be character vectors")
   }
   # make sure that the isotope columns are numeric
