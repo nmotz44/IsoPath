@@ -11,7 +11,7 @@
 
 <meta name="author" content="Noah Motz, Brendan Campbell, Rileigh Hudock, Tess Avery, Ben Marsaly, Howard Townsend, Jim Vasslides, Edward Hale, Aaron Carlisle" />
 
-<meta name="date" content="2025-09-29" />
+<meta name="date" content="2025-12-03" />
 
 <title>IsoPath Workflow Walkthrough</title>
 
@@ -354,7 +354,7 @@ display: none;
 <h4 class="author">Noah Motz, Brendan Campbell, Rileigh Hudock, Tess
 Avery, Ben Marsaly, Howard Townsend, Jim Vasslides, Edward Hale, Aaron
 Carlisle</h4>
-<h4 class="date">2025-09-29</h4>
+<h4 class="date">2025-12-03</h4>
 
 </div>
 
@@ -380,9 +380,6 @@ rm(list = ls())
 set.seed(22)
 
 # load required packages
-#library(tidyverse)
-#library(simmr)
-#library(Rpath)
 library(IsoPath)
 
 # load data
@@ -430,7 +427,10 @@ for (i in 1:length(predator_list)){
   print(&quot;=====================================================================&quot;)
   print(predator_list[i])
   # create simmr object
-  simmr_object = format_simmr_data(iso_data, &quot;Functional_Group&quot;, &quot;d13C&quot;, &quot;d15N&quot;, predator_list[i], prey_list[[i]],
+  simmr_object = format_simmr_data(data = iso_data, species.column = &quot;Functional_Group&quot;, 
+                                   d13C.column = &quot;d13C&quot;, d15N.column = &quot;d15N&quot;, 
+                                   consumer.names = predator_list[i], 
+                                   prey.names = prey_list[[i]],
                                    disc.factors.c = 0.4, disc.factors.n = 3.4, 
                                    disc.factors.c.sd = 1, disc.factors.n.sd = 1.3)
   # run simmr
